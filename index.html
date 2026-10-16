@@ -1,28 +1,79 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>coming soon</title>
-  <style>
-    body {
-      background-color: #000000;
-      color: #D4AF37;
-      display: flex;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-      font-family: sans-serif;
-      margin: 0;
-    }
-    h1 {
-      font-size: 3rem;
-      letter-spacing: 2px;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yousif Is Here | King of TikTok</title>
+<meta name="description" content="Yousif Is Here — a presence, a community, and a story still being written.">
+<style>
+:root { color-scheme: dark; --gold:#d8b46a; --gold2:#f6df9a; --ink:#080706; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; color:#f7f0df; background:#080706;
+  font-family:Georgia,"Times New Roman",serif; line-height:1.65;
+}
+body::before {
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(174,124,39,.22), transparent 45%),
+    radial-gradient(ellipse at 0% 80%, rgba(174,124,39,.10), transparent 35%),
+    linear-gradient(135deg,#050505,#17110a 52%,#050505);
+}
+main { width:min(100% - 32px, 900px); margin:0 auto; padding:34px 0 42px; }
+.brand { text-align:center; }
+.eyebrow { color:var(--gold); letter-spacing:.38em; font:12px/1.4 Arial,sans-serif; text-transform:uppercase; }
+h1 { margin:8px 0 0; color:var(--gold2); font-size:clamp(34px,7vw,66px); font-weight:normal; letter-spacing:.07em; line-height:1.08; text-shadow:0 0 24px #9b6b1d55; }
+.subtitle { margin:12px 0 22px; color:#ead8ac; font:12px Arial,sans-serif; letter-spacing:.42em; }
+.rule { height:1px; width:min(360px,80%); margin:0 auto 24px; background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+.photos { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; align-items:stretch; }
+.photos img { display:block; width:100%; height:clamp(170px,34vw,360px); object-fit:cover; object-position:center; border:1px solid #b28a42; border-radius:3px; box-shadow:0 8px 28px #0009; }
+.about { max-width:740px; margin:30px auto 0; padding:24px clamp(18px,4vw,38px); border:1px solid #8b6a32; background:linear-gradient(145deg,#16110bdc,#090807ed); box-shadow:0 12px 36px #0008; }
+.about h2 { margin:0 0 16px; color:var(--gold2); font-weight:normal; font-size:clamp(23px,4vw,32px); text-align:center; letter-spacing:.08em; }
+.about p { margin:0 0 14px; font-size:clamp(15px,2.2vw,18px); }
+.about p:last-child { margin-bottom:0; }
+.socials { display:flex; justify-content:center; gap:18px; margin:25px 0 0; }
+.social { width:52px; height:52px; border:1px solid var(--gold); border-radius:50%; display:grid; place-items:center; color:var(--gold2); text-decoration:none; font: bold 12px Arial,sans-serif; letter-spacing:-.03em; box-shadow:0 0 16px #b78b3630; }
+.social:hover { background:#d8b46a18; }
+footer { text-align:center; color:#bca878; font:10px Arial,sans-serif; letter-spacing:.24em; margin-top:25px; text-transform:uppercase; }
+@media (max-width:520px) {
+ main { width:min(100% - 22px,900px); padding-top:24px; }
+ .photos { gap:7px; }
+ .photos img { height:clamp(145px,42vw,230px); }
+ .about { margin-top:22px; padding:20px 16px; }
+ .socials { gap:13px; }
+}
+</style>
 </head>
 <body>
-  <div>
-    <h1>Yousif is here</h1>
-  </div>
+<main>
+  <header class="brand">
+    <div class="eyebrow">The official story</div>
+    <h1>YOUSIF IS HERE</h1>
+    <div class="subtitle">KING OF TIKTOK</div>
+    <div class="rule"></div>
+  </header>
+
+  <section class="photos" aria-label="Yousif photo gallery">
+    <img src="photo1.jpg" alt="Yousif seated in a light shirt">
+    <img src="photo2.jpg" alt="Yousif in a casual portrait">
+    <img src="photo3.jpg" alt="Yousif wearing a white suit">
+  </section>
+
+  <section class="about">
+    <h2>ABOUT YOUSIF IS HERE</h2>
+    <p>Known to his supporters as Yusuf Al Pakistani, Yousif's live presence, personality, and TikTok battles have brought viewers together for years, creating moments of excitement, competition, and strong support from his community.</p>
+    <p>His journey has been about personality, entertainment, the battles, and the connection his supporters share. For supporters, it's about more than a username. It’s about the person, the entertainment, the competition, and the bond they feel.</p>
+    <p>Known as the King of TikTok, Yousif represents a world where every live session can become a show, every battle a moment to remember, and every supporter part of the journey.</p>
+    <p><strong>Yousif Is Here is more than a name. It's a presence, a community, and a story still being written.</strong> The journey continues. The next chapter is coming soon.</p>
+  </section>
+
+  <nav class="socials" aria-label="Social media">
+    <span class="social" aria-label="TikTok">♪</span>
+    <span class="social" aria-label="Instagram">IG</span>
+    <span class="social" aria-label="Snapchat">SC</span>
+  </nav>
+  <footer>Yousif Is Here · A story still being written</footer>
+</main>
 </body>
 </html>
